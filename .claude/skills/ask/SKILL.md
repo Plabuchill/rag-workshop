@@ -19,8 +19,8 @@ allowed-tools: Bash(python -m rag.retrieve:*)
 รันทีละคำค้น (ใส่ `--include-superseded` เพื่อให้เห็นฉบับเดิมและบอกการเปลี่ยนแปลงได้ตามข้อ 6):
 
 ```bash
-python -m rag.retrieve "<คำค้นแบบ A>" -k 4 --json --include-superseded
-python -m rag.retrieve "<คำค้นแบบ B>" -k 4 --json --include-superseded
+python -m rag.retrieve "<คำค้นแบบ A>" -k 4 --json --method hybrid --include-superseded
+python -m rag.retrieve "<คำค้นแบบ B>" -k 4 --json --method hybrid --include-superseded
 ```
 
 - รวมผลทั้งสองชุด ตัด chunk_id ที่ซ้ำ
