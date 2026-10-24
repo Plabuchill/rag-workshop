@@ -11,4 +11,6 @@ python -m rag.retrieve "เบิกค่าทำฟันได้เท่�
 
 ใน Claude Code: `/ask ทำงานจากที่บ้านได้กี่วัน` · `/ask-eval dev 10`
 
+**นาวา RAG Workbench** (เปิดดูเอกสาร ลองแบ่ง chunk ค้นคืนแบบ tfidf/hybrid และวัดผล dev บนเว็บ): https://plabuchill.github.io/rag-workshop/
+
 ข้อมูลทั้งหมดเป็นของสมมติ
