@@ -20,7 +20,7 @@ python -c "import csv,sys; rows=[r for r in csv.DictReader(open('data/eval/quest
 
 ## 2. ตอบทีละข้อตามขั้นตอนของ /ask
 ทำตาม `.claude/skills/ask/SKILL.md` ทุกข้อสำหรับแต่ละคำถาม:
-- เขียนคำค้น 2 แบบ แล้วรัน `python -m rag.retrieve "<คำค้น>" -k 4 --json --include-superseded`
+- เขียนคำค้น 2 แบบ แล้วรัน `python -m rag.retrieve "<คำค้น>" -k 4 --json --method hybrid --include-superseded`
 - ห้ามเปิดไฟล์ใน `data/docs/` โดยตรง
 - ตอบภาษาไทยไม่เกิน 3 ประโยคจาก chunk ที่ status active เท่านั้น และทุกข้อเท็จจริงลงท้ายด้วย `[chunk_id]`
 - ถ้าไม่มีคำตอบให้ตอบว่า "ไม่พบข้อมูลในเอกสาร" พร้อมบอกฝ่ายที่ควรติดต่อ
